@@ -1,0 +1,44 @@
+@page "/todo"
+
+<h1>Todo (@todos.Count(todo => !todo.IsDone))</h1>
+
+<ul>
+    @foreach (var todo in todos)
+    {
+        <li>
+            <input type="checkbox" @bind="@todo.IsDone" />
+            <input @bind="@todo.Title" />
+        </li>
+    }
+</ul>
+<input placeholder="Todo Item" @bind="@newTodo" @onkeyup="@KeyUp" />
+<button @onclick="@AddTodo">Add Todo</button>
+
+@code {
+
+    private IList<TodoItem> todos = new List<TodoItem>();
+    private string newTodo;
+
+    class TodoItem
+    {
+        public string Title { get; set; }
+        public bool IsDone { get; set; }
+    }
+
+    void AddTodo()
+    {
+        if (!string.IsNullOrWhiteSpace(newTodo))
+        {
+            todos.Add(new TodoItem() { Title = newTodo, IsDone = false });
+            newTodo = "";
+        }
+    }
+
+    void KeyUp(UIKeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            AddTodo();
+        }
+    }
+}

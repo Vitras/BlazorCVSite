@@ -1,0 +1,50 @@
+﻿<div class="@NavMenuCssClass">
+    <ul class="nav flex-row">
+        <li>
+            <a class="navbar-brand" href="">BlazorClientSample</a>
+            <button class="navbar-toggler">
+                <span class="navbar-toggler-icon" ></span>
+            </button>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All" 
+                     @onclick="@(() => OnHeaderPress(new List<string>()))">
+                <span class="oi oi-home" aria-hidden="true" ></span> Home
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="About" Match="NavLinkMatch.All" @onclick="@(() => OnHeaderPress(new List<string>()))">
+                <span class="oi oi-home" aria-hidden="true" ></span> About
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="Career" Match="NavLinkMatch.All"  @onclick="@(() => OnHeaderPress(new List<string>() { "Education", "Keylane" }))">
+                <span class="oi oi-home" aria-hidden="true"></span> Career
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="Skills" Match="NavLinkMatch.All"  @onclick="@(() => OnHeaderPress(new List<string>() {"C#", "Blazor", ".NET Core", "Unity3D", "Godot", "Java" }))">
+                <span class="oi oi-home" aria-hidden="true"></span> Skills
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="Achievements" Match="NavLinkMatch.All" @onclick="@(() => OnHeaderPress(new List<string>()))">
+                <span class="oi oi-home" aria-hidden="true"></span> Achievements
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="Contact" Match="NavLinkMatch.All" @onclick="@(() => OnHeaderPress(new List<string>()))">
+                <span class="oi oi-home" aria-hidden="true"></span> Contact
+            </NavLink>
+        </li>
+    </ul>
+</div>
+
+@code {
+bool collapseNavMenu = true;
+
+string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+[Parameter]
+public Action<List<string>> OnHeaderPress { get; set; }
+}
