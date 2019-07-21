@@ -10,7 +10,7 @@ pages:
   script:
   - mkdir public
   - dotnet publish -c Release -o output
-  - cp -a ./CVSite/output/CVSite/dist/* ./public
+  - cp -a ./BlazorCVSite/output/BlazorCVSite/dist/* ./public
   artifacts:
     paths:
     - public
