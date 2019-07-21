@@ -33,7 +33,7 @@ steps:
 - script: |
     git config --global user.name "$NAME"
     git config --global user.email "$EMAIL"
-    cd $(Build.ArtifactStagingDirectory)/dotnetstandard2.0/dist
+    cd $(Build.ArtifactStagingDirectory)/s/BlazorCVSite/dist
     git init
     git checkout -b gh-pages
     git add -A
