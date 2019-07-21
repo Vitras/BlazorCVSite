@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\C#\\C# other stuff\\Blazor\\BlazorCVSite\\BlazorCVSite.csproj": {}
+    "D:\\Projects\\C#\\C# other stuff\\Blazor\\Github\\BlazorCVSite.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\C#\\C# other stuff\\Blazor\\BlazorCVSite\\BlazorCVSite.csproj": {
+    "D:\\Projects\\C#\\C# other stuff\\Blazor\\Github\\BlazorCVSite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\C#\\C# other stuff\\Blazor\\BlazorCVSite\\BlazorCVSite.csproj",
+        "projectUniqueName": "D:\\Projects\\C#\\C# other stuff\\Blazor\\Github\\BlazorCVSite.csproj",
         "projectName": "BlazorCVSite",
-        "projectPath": "D:\\Projects\\C#\\C# other stuff\\Blazor\\BlazorCVSite\\BlazorCVSite.csproj",
+        "projectPath": "D:\\Projects\\C#\\C# other stuff\\Blazor\\Github\\BlazorCVSite.csproj",
         "packagesPath": "C:\\Users\\vitra\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\C#\\C# other stuff\\Blazor\\BlazorCVSite\\obj\\",
+        "outputPath": "D:\\Projects\\C#\\C# other stuff\\Blazor\\Github\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
