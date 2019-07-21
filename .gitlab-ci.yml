@@ -1,7 +1,9 @@
-image:  microsoft/dotnet:2.1.302-sdk
+image:  microsoft/dotnet:3.0.100-preview6
 
 before_script:
   - dotnet restore
+  - dotnet new -u Microsoft.AspNetCore.Blazor.Tempates
+  - dotnet new -i Microsoft.AspNetCore.Blazor.Templates::0.8.0-preview-19104-04
   
 pages:
   stage: deploy
