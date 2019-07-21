@@ -10,7 +10,7 @@ pages:
   script:
   - mkdir public
   - dotnet publish -c Release -o output
-  - cp -a ./builds/AzureflareKai/cvsite/output/* ./public
+  - cp -a -r ./output/* ./public
   artifacts:
     paths:
     - public
