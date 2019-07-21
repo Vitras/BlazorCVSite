@@ -1,4 +1,4 @@
-image:  microsoft/dotnet:3.0.100-preview6
+image:  mcr.microsoft.com/dotnet/core/sdk:3.0.100-preview6-alpine3.9
 
 before_script:
   - dotnet restore
