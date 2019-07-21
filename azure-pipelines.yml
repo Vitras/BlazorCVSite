@@ -39,7 +39,7 @@ steps:
     git add -A
     git commit -m "Create build $(Build.BuildId)"
     git push -f https://$PAT@github.com/vitras/BlazorCVSite.git gh-pages
-  displayName: 'Publish to GitHub Pages'
+  displayName: 'Publish to GitHub Pages.. maybe'
   env:
     PAT: $(GitHubPAT)
     NAME: $(GitHubName)
